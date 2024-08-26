@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(29, 2, 2);
+}
+
+.contain {
+  display: flex;
+  width: 100%;
+  height: 180px;
+  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
+  margin: 50px auto;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.contain-1 {
+  display: flex;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.over {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  gap: 15px;
+  padding: 20px;
+  position: absolute;
+  top: 92px;
+  left: 0;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  transition: 0.9s;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.over hr {
+  width: 60%;
+  height: 1px;
+  color: rgb(0, 0, 0);
+}
+
+.over:hover{
+  transform: scale(1.1);
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(1px);
+}
+
+/* navbar */
+
+.container {
+  display: flex;
+  width: 90%;
+  height: 150px;
+  margin: auto;
+  overflow: hidden;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cont_1 {
+  display: flex;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  gap: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.5s;
+  background-image: linear-gradient(to top, rgb(203, 204, 138),rgba(128, 128, 128, 0.267), rgba(255, 255, 255, 0));
+}
+
+.overlay:hover {
+  top: 0;
+  transform: scale(1.1);
+}
+
+.overlay hr {
+  height: 1px;
+  width: 60%;
+}
+
+/* hover part 2 */
+
+.cont {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hover {
+  display: flex;
+  position: relative;
+  height: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.text {
+  position: absolute;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: 0.5s;
+  text-align: center;
+  color: white;
+  backdrop-filter: blur(2px);
+  background-color: rgba(128, 128, 128, 0.281);
+}
+
+.text:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.hover hr {
+  width: 50%;
+  height: 1px;
+}
